@@ -1,0 +1,45 @@
+
+Java
+ com.digitalbank.AuthService
+    config
+      AppConfig.java
+    Controller
+      AppController
+    dto
+      LoginRequest
+      LoginResponse
+      RegisterRequest
+      UserResponse
+    entity
+      Role
+      User
+    exception
+      GlobalExceptionHandler
+      InvalidCredintialsException
+      UserAlreadyExistsException
+    mapper
+      UserMapper
+    Repository
+      UserRepository
+    security
+      CustomUserDetailsService
+      JwtAuthenticationFilter
+      JwtService
+      SecurityConfig
+    services
+      AuthService
+      AuthServiceImpl
+
+Database
+  digital_banking_db
+
+    bank_auth_db
+    bank_account_db
+    bank_transaction_db
+    bank_payment_db
+    bank_notification_db
+    bank_audit_db
+
+ tables
+   users
+
