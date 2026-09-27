@@ -5,7 +5,6 @@ import com.digitalbank.AuthService.dto.LoginResponse;
 import com.digitalbank.AuthService.dto.RegisterRequest;
 import com.digitalbank.AuthService.dto.UserResponse;
 
-
 public interface AuthService {
 
     UserResponse register(RegisterRequest request);
