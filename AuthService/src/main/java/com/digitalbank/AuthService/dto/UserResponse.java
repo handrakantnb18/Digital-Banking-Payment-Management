@@ -2,7 +2,7 @@ package com.digitalbank.AuthService.dto;
 
 public class UserResponse {
 
-    private Long id;
+    private Integer id;
     private String username;
     private String email;
     private String firstName;
@@ -15,7 +15,7 @@ public class UserResponse {
 
     }
 
-    public UserResponse(Long id, String username, String email, String firstName, String lastName, String phone, String role, boolean enabled) {
+    public UserResponse(Integer id, String username, String email, String firstName, String lastName, String phone, String role, boolean enabled) {
         this.id = id;
         this.username = username;
         this.email = email;
@@ -26,11 +26,11 @@ public class UserResponse {
         this.enabled = enabled;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
