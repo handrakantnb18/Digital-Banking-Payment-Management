@@ -5,7 +5,7 @@ public class LoginResponse {
 
     private String token;
     private String tokenType;
-    private Long userId;
+    private Integer userId;
     private String username;
     private String email;
     private String role;
@@ -14,7 +14,7 @@ public class LoginResponse {
 
     }
 
-    public LoginResponse(String email, String token, String tokenType, Long userId, String username, String role) {
+    public LoginResponse(String email, String token, String tokenType, Integer userId, String username, String role) {
         this.email = email;
         this.token = token;
         this.tokenType = tokenType;
@@ -39,11 +39,11 @@ public class LoginResponse {
         this.tokenType = tokenType;
     }
 
-    public Long getUserId() {
+    public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(Long userId) {
+    public void setUserId(Integer userId) {
         this.userId = userId;
     }
 
