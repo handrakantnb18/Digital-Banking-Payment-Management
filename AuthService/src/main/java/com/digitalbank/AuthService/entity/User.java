@@ -80,6 +80,14 @@ public class User {
 
     }
 
+//    postman login post method
+
+//    {
+//        "Email": "chandrakant@gmail.com",
+//            "Password": "admin123"
+//
+//    }
+
 //    public Long getId() {
 //        return id;
 //    }
@@ -184,4 +192,5 @@ public class User {
                 ", updatedAt=" + updatedAt +
                 '}';
     }
+
 }
