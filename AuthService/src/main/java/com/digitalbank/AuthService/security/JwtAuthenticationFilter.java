@@ -17,7 +17,9 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import java.io.IOException;
 
 @Component
-public class JwtAuthenticationFilter extends OncePerRequestFilter {
+ public class JwtAuthenticationFilter extends OncePerRequestFilter {
+
+//public class JwtAuthenticationFilter {
 
     private final JwtService jwtService;
     private final CustomUserDetailsService userDetailsService;
@@ -42,7 +44,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 request.getHeader("Authorization");
 
         if (authHeader == null ||
-                !authHeader.startsWith("Bearer")){
+                !authHeader.startsWith("Bearer ")){
             filterChain.doFilter(request, response);
 
             return;
@@ -97,4 +99,5 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
         filterChain.doFilter(request, response);
     }
+
 }
