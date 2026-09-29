@@ -1,0 +1,18 @@
+com/digitalbank/gateway
+    ApiGatewayApplication
+  config
+    GatewayConfig
+  filter
+    JwtAuthenticatioFilter
+    RequestLoggingFilter
+  exception
+    GlobalExceptionHandler
+
+
+    API Gateway     	    : 8080
+    Auth Service	        : 8081
+    Account Service	        : 8082
+    Transaction Service	    : 8083
+    Payment Service	        : 8084
+    Notification Service	: 8085
+    Audit Service	        : 8086
