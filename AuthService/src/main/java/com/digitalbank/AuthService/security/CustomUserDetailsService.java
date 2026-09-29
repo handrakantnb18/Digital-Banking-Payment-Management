@@ -1,6 +1,5 @@
 package com.digitalbank.AuthService.security;
 
-import com.digitalbank.AuthService.dto.UserResponse;
 import com.digitalbank.AuthService.entity.User;
 import com.digitalbank.AuthService.repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -9,7 +8,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CustomUserDetailsService implements UserDetailsService {
+ public class CustomUserDetailsService implements UserDetailsService {
+
+// public class CustomUserDetailsService {
 
     private final UserRepository userRepository;
 
