@@ -3,7 +3,9 @@ package com.digitalbank.AuthService.mapper;
 import com.digitalbank.AuthService.dto.RegisterRequest;
 import com.digitalbank.AuthService.dto.UserResponse;
 import com.digitalbank.AuthService.entity.User;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UserMapper {
 
     public User toEntity(RegisterRequest request) {
